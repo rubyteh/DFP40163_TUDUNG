@@ -1,0 +1,199 @@
+/* Laman Utama */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    background-color: whitesmoke;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(201, 198, 198);
+}
+
+.content {
+    text-align: center;
+    display: center;
+    margin: 60px auto;
+    width: auto;
+    background: transparent;
+    box-shadow: 0 0 16px rgb(0 0 0/ 10%);
+    border-radius: 4px;
+    padding: 24px;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.content-pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    display: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    box-shadow: 0 0 16px rgba(34, 34, 34, 0.1);
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product p {
+    font-weight: bold;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+/* Borang Pesanan */
+.cart {
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subtotal {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.total {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.shipping-note {
+    font-size: 12px;
+    color: #666;
+}
+
+.checkout button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: whitesmoke;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
